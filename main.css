@@ -6,6 +6,8 @@
 .screenShot img {
     width: 500px;
     height: auto; 
+    box-shadow: 2px 2px 25px black;
+    margin-bottom: 20px;
 }
 
 a {
@@ -33,4 +35,14 @@ a {
 #navLinks a:hover {
     transition: background-color  .5s ease-in;
     background-color: lightgray;
+}
+
+.page-footer {
+    margin-top: 50px;
+}
+
+.icon img{
+    margin: 10px 0;
+    height: 50px;
+    width: 50px;
 }

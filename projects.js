@@ -1,23 +1,23 @@
 const projects = [
     {
-        title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-        alt: "Cat",
-        description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+        title: "Language Translator", 
+        screenshot: "./imgs/lang-translator.PNG", 
+        alt: "Language Translator Screenshot",
+        description: "A simple translator using JS objects and for loops to take a limited number of entries and print the translation to the DOM",
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
-        url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-        githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+        url: "", 
+        githubUrl: "https://github.com/Waysidetester/language-translator"
     },
     {
-        title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-        alt: "Cat again",
-        description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
-        technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+        title: "Sorting Hat", 
+        screenshot: "https://github.com/Waysidetester/sorting-hat/blob/master/Snapshot.PNG?raw=true", 
+        alt: "Sorting Hat Screenshot",
+        description: "A simple RNG funtion to place pseudo students into fictional Harry Potter house names with conditional Bootstrap styling",
+        technologiesUsed: "HTML, Vanilla JavaScript, Bootstrap, Version Control with Github",
         available: true,
-        url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-        githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+        url: "", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
+        githubUrl: "https://github.com/Waysidetester/sorting-hat"
     }
 ];
 
