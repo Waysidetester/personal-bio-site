@@ -1,3 +1,6 @@
+import 'bootstrap';
+import './index.scss';
+
 const projects = [
   {
     title: 'Language Translator',
@@ -31,12 +34,12 @@ const createProjectCards = () => {
   for (let i = 0; i < projects.length; i += 1) {
     if (projects[i].available) {
       newCard = ''; // empties newCard for new text
-      newCard += `<section class='projectCard'>;
-        <h4 class='projectTitle'>${projects[i].title}</h4>;
-        <a class='screenShot' href='${projects[i].url}'><img src='${projects[i].screenshot}' alt='${projects[i].alt}'/></a>;
-        <p class='projectDescription'>${projects[i].description}</p>;
-        <p class='projectTechUsed'>${projects[i].technologiesUsed}</p>;
-        <a href='${projects[i].githubUrl}'>Github Repository</a>;
+      newCard += `<section class='projectCard'>
+        <h4 class='projectTitle'>${projects[i].title}</h4>
+        <a class='screenShot' href='${projects[i].url}'><img src='${projects[i].screenshot}' alt='${projects[i].alt}'/></a>
+        <p class='projectDescription'>${projects[i].description}</p>
+        <p class='projectTechUsed'>${projects[i].technologiesUsed}</p>
+        <a href='${projects[i].githubUrl}'>Github Repository</a>
         </section>`;
     } else {
       newCard = '';
