@@ -1,33 +1,9 @@
 import './index.scss';
-import $ from 'jquery';
 import 'bootstrap';
+import projectComponent from './javascritps/components/projectComponent';
 
-
-const createProjectCards = (projects) => {
-  let newCard = '';
-  for (let i = 0; i < projects.length; i += 1) {
-    if (projects[i].available) {
-      newCard = ''; // empties newCard for new text
-      newCard += `<section class='card'>
-        <h4 class='card-title'>${projects[i].title}</h4>
-        <a href='${projects[i].url}'><img class='card-img-top' src='${projects[i].screenshot}' alt='${projects[i].alt}'/></a>
-        <p class='card-text'>${projects[i].description}</p>
-        <p class='card-text'>${projects[i].technologiesUsed}</p>
-        <a class='card-text' href='${projects[i].githubUrl}'>Github Repository</a>
-        </section>`;
-    } else {
-      newCard = '';
-    }
-    $('#projectsPage').append(newCard);
-  }
+const init = () => {
+  projectComponent.projectInit();
 };
 
-const projectsAjax = () => new Promise((resolve, reject) => { $.get('http://localhost:3003/projects').done((data) => { resolve(data); }).fail((error) => { reject(error); }); });
-
-projectsAjax()
-  .then((data) => {
-    createProjectCards(data);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+init();
