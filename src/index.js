@@ -1,10 +1,11 @@
-import 'bootstrap';
 import './index.scss';
+import $ from 'jquery';
+import 'bootstrap';
 
 const projects = [
   {
     title: 'Language Translator',
-    screenshot: './imgs/lang-translator.PNG',
+    screenshot: 'https://github.com/Waysidetester/language-translator/blob/master/snapshot.PNG?raw=true',
     alt: 'Language Translator Screenshot',
     description: 'A simple translator using JS objects and for loops to take a limited number of entries and print the translation to the DOM',
     technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
@@ -24,27 +25,22 @@ const projects = [
   },
 ];
 
-const printToDom = (stringToPrint, divID) => {
-  const selectedDiv = document.getElementById(divID);
-  selectedDiv.innerHTML += stringToPrint;
-};
-
 const createProjectCards = () => {
   let newCard = '';
   for (let i = 0; i < projects.length; i += 1) {
     if (projects[i].available) {
       newCard = ''; // empties newCard for new text
-      newCard += `<section class='projectCard'>
-        <h4 class='projectTitle'>${projects[i].title}</h4>
-        <a class='screenShot' href='${projects[i].url}'><img src='${projects[i].screenshot}' alt='${projects[i].alt}'/></a>
-        <p class='projectDescription'>${projects[i].description}</p>
-        <p class='projectTechUsed'>${projects[i].technologiesUsed}</p>
-        <a href='${projects[i].githubUrl}'>Github Repository</a>
+      newCard += `<section class='card'>
+        <h4 class='card-title'>${projects[i].title}</h4>
+        <a href='${projects[i].url}'><img class='card-img-top' src='${projects[i].screenshot}' alt='${projects[i].alt}'/></a>
+        <p class='card-text'>${projects[i].description}</p>
+        <p class='card-text'>${projects[i].technologiesUsed}</p>
+        <a class='card-text' href='${projects[i].githubUrl}'>Github Repository</a>
         </section>`;
     } else {
       newCard = '';
     }
-    printToDom(newCard, 'projectsPage');
+    $('#projectsPage').append(newCard);
   }
 };
 
