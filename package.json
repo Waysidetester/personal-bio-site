@@ -7,7 +7,8 @@
     "build": "NODE_ENV=production webpack",
     "lint": "eslint ./src --ext .js",
     "dev": "NODE_ENV=development webpack-dev-server --content-base dist --hot",
-    "start": "npm run lint && npm run dev"
+    "start": "npm run lint && npm run dev",
+    "json": "json-server db/projects.json --port 3003"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,8 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
     "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
+    "json-server": "^0.14.0"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
