@@ -8,7 +8,9 @@ const createProjectCards = (projects) => {
       newCard = ''; // empties newCard for new text
       newCard += `<section class='card'>
         <h4 class='card-title'>${projects[i].title}</h4>
-        <a href='${projects[i].url}'><img class='card-img-top' src='${projects[i].screenshot}' alt='${projects[i].alt}'/></a>
+        <a href='${projects[i].githubUrl}'>
+        <img class='card-img-top' src='${projects[i].screenshot}' alt='${projects[i].alt}'/>
+        </a>
         <p class='card-text'>${projects[i].description}</p>
         <p class='card-text'>${projects[i].technologiesUsed}</p>
         <a class='card-text' href='${projects[i].githubUrl}'>Github Repository</a>
@@ -21,9 +23,9 @@ const createProjectCards = (projects) => {
 };
 
 const projectInit = () => {
-  projectData.projectsAjax()
+  projectData.projectsAxios()
     .then((data) => {
-      createProjectCards(data);
+      createProjectCards(data.data);
     })
     .catch((error) => {
       console.error(error);
