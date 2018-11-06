@@ -6,7 +6,7 @@
       "screenshot": "https://raw.githubusercontent.com/Waysidetester/shotz/master/images/screenshot.PNG?raw=true",
       "alt": "Shotz screenshot",
       "description": "A dynamically loaded webpage showing dummy film locations and dummy movies. Each location has a number representing how many movies it was used in.",
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, ajax, jQuery, Version Control with Github",
+      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Ajax, jQuery, Chrome Modules, Version Control with Github",
       "available": true,
       "githubUrl": "https://github.com/Waysidetester/shotz"
     },
@@ -15,7 +15,7 @@
       "screenshot": "https://raw.githubusercontent.com/Waysidetester/adoption-site/master/imgs/screenshot.PNG",
       "alt": "Adoption Site Screenshot",
       "description": "A small project where bootstrap and information is dynamically placed on the page. A filter method was also placed to search what type of animal you want.",
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Chrome Modules, Version Control with Github",
       "available": true,
       "githubUrl": "https://github.com/Waysidetester/adoption-site"
     },

@@ -21,28 +21,37 @@
   <!-- End Navigation -->
 
   <!-- Primary View -->
-  <div class="fullPage container" id="bioPage">
-    <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-    <h2>BIOGRAPHY</h2>
-    <p>I started coding when I realized my professional development had hit a ceiling at my job.
-        I found some free coding tools online and realized how satisfying functioning code can be.
-        With this newly discovered passion, I hope to create a positive change for myself and my potential employer!
-    </p>
+  <div id="title-image">
+    <h1 id="image-text">WELCOME</h1>
   </div>
+
+  <div id="bioPage" class="p-3 mt-2 mb-2">
+    <div class="fullPage container" >
+      <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
+      <h2>BIOGRAPHY</h2>
+      <p class="bio-detail">I started coding when I realized my professional development had hit a ceiling at my job.
+          I found some free coding tools online and realized how satisfying functioning code can be.
+          With this newly discovered passion, I hope to create a positive change for myself and my potential employer!
+      </p>
+    </div>
+  </div>
+
+  <div class="fullPage container">
+    <div id="projectsPage" class="d-flex flex-wrap"></div>
+  </div>
+
   <div class="fullPage container" id="technologiesPage">
     <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
-    <ul>
-        <li class="icon list-group-item"><img src='https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg' alt="HTML 5"></li>
-        <li class="icon list-group-item"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS3"></li>
-        <li class="icon list-group-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"></li>
-        <li class="icon list-group-item"><img id="node" alt="Node.js"></li>
-        <li class="icon list-group-item"><img id="jQuery" alt="jQuery"></li>
-        <li class="icon list-group-item"><img id="firebase" alt="Firebase"></li>
-        <li class="icon list-group-item"><img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fentwickler.de%2Fwp-content%2Fuploads%2F2017%2F08%2Fbootstrap-stack-900x450.jpg&f=1" alt="Bootstrap"></li>
+    <ul class="d-flex justify-content-around flex-wrap">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src='https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg' alt="HTML 5"/></li></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS3"/></li></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"/></li></a>
+        <a href="https://nodejs.org/en/about/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/nodejs-512.png" alt="Node JS"/></li></a>
+        <a href="https://jquery.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="http://pluspng.com/img-png/jquery-logo-png-jquery-320.png" alt="J Query"/></li></a>
+        <a href="https://firebase.google.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://firebase.google.com/images/brand-guidelines/logo-logomark.png" alt="Firebase"></li></a>
+        <a href="http://getbootstrap.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="http://jakubchadim.cz/img/icons/bootstrap.svg" alt="Bootstrap"></li></a>
+        <a href="http://sass-lang.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://serfrontend.com/img/icos/ico-SASS.svg" alt="Sass"></li></a>
     </ul>
-  </div>
-  <div class="fullPage container">
-    <div id="projectsPage"></div>
   </div>
   <!-- End Primary View -->
 
