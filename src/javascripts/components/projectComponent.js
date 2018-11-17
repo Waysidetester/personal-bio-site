@@ -10,11 +10,11 @@ const createProjectCards = (projects) => {
           <div class="m-4">
             <h4 class='card-title'>${projects[i].title}</h4>
             <a href='${projects[i].githubUrl}' target="_blank">
-              <img class='card-img-top' src='${projects[i].screenshot}' alt='${projects[i].alt}'/>
+            <img class='card-img-top' src='${projects[i].screenshot}' alt='${projects[i].alt}'/>
             </a>
             <p class='card-text'>${projects[i].description}</p>
             <p class='card-text'>${projects[i].technologiesUsed}</p>
-            <a class='card-text' href='${projects[i].githubUrl}' target="_blank">Github Repository</a>
+      <a class='card-text' href='${projects[i].githubUrl}' target="_blank">Github Repository</a>
           </div>
         </div>`;
     } else {
