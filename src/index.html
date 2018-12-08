@@ -10,58 +10,59 @@
   <!-- Navigation -->
   <nav class="navbar sticky-top navbar-light bg-light">
     <div class="container">
-    <h1>Dylan Murray</h1>
+    <h1><span class="sarah-style">D</span>YLAN <span class="sarah-style">M</span>URRAY</h1>
     <ul id="navLinks">
       <a class="nav-links" id="navToBio" href="#"><li>Bio</li></a>
-      <a class="nav-links" id="navToTechnologies" href="#"><li>Technologies</li></a>
       <a class="nav-links" id="navToProjects" href="#"><li>Projects</li></a>
+      <a class="nav-links" id="navToTechnologies" href="#"><li>Technologies</li></a>
     </ul>
   </div>
   </nav>
   <!-- End Navigation -->
 
   <!-- Primary View -->
-  <div id="title-image">
-    <h1 id="image-text">WELCOME</h1>
-  </div>
-
-  <div id="bioPage" class="p-3 mt-2 mb-2">
-    <div class="fullPage container" >
-      <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-      <h2>BIOGRAPHY</h2>
-      <p class="bio-detail">I started coding when I realized my professional development had hit a ceiling at my job.
-          I found some free coding tools online and realized how satisfying functioning code can be.
-          With this newly discovered passion, I hope to create a positive change for myself and my potential employer!
-      </p>
+  <div id="title-image" class="height">
+    <div>
+      <h1 id="image-text">WELCOME</h1>
     </div>
   </div>
 
-  <div class="fullPage container">
-    <div id="projectsPage" class="d-flex flex-wrap"></div>
+  <div id="bioPage">
+    <div class="height">
+      <div class="fullPage container" >
+        <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
+        <h2>BIOGRAPHY</h2>
+        <p class="bio-detail">I started coding when I realized my professional development had hit a ceiling at my job.
+            I found some free coding tools online and realized how satisfying functioning code can be.
+            With this newly discovered passion, I hope to create a positive change for myself and my potential employer!
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div class="fullPage container" id="technologiesPage">
-    <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
-    <ul class="d-flex justify-content-around flex-wrap">
-        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src='https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg' alt="HTML 5"/></li></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS3"/></li></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"/></li></a>
-        <a href="https://nodejs.org/en/about/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/nodejs-512.png" alt="Node JS"/></li></a>
-        <a href="https://jquery.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="http://pluspng.com/img-png/jquery-logo-png-jquery-320.png" alt="J Query"/></li></a>
-        <a href="https://firebase.google.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://firebase.google.com/images/brand-guidelines/logo-logomark.png" alt="Firebase"></li></a>
-        <a href="http://getbootstrap.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="http://jakubchadim.cz/img/icons/bootstrap.svg" alt="Bootstrap"></li></a>
-        <a href="http://sass-lang.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://serfrontend.com/img/icos/ico-SASS.svg" alt="Sass"></li></a>
-    </ul>
+  <div class="fullPage container" id="projects-container">
+    <h2 class="subtitles">Projects</h2>
+    <div id="projectsPage" class="d-flex flex-wrap height"></div>
+  </div>
+
+  <div id="tech-container" class="height">
+    <div class="fullPage container" id="technologiesPage">
+      <h2 class="subtitles">Technologies Used</h2>
+      <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
+      <ul class="d-flex justify-content-around flex-wrap">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src='https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg' alt="HTML 5"/></li></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS3"/></li></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"/></li></a>
+          <a href="https://nodejs.org/en/about/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/nodejs-512.png" alt="Node JS"/></li></a>
+          <a href="https://jquery.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="http://pluspng.com/img-png/jquery-logo-png-jquery-320.png" alt="J Query"/></li></a>
+          <a href="https://firebase.google.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://firebase.google.com/images/brand-guidelines/logo-logomark.png" alt="Firebase"></li></a>
+          <a href="http://getbootstrap.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="http://jakubchadim.cz/img/icons/bootstrap.svg" alt="Bootstrap"></li></a>
+          <a href="http://sass-lang.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src="https://serfrontend.com/img/icos/ico-SASS.svg" alt="Sass"></li></a>
+          <a href="https://github.com/Waysidetester" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src='https://maxcdn.icons8.com/Share/icon/p1em/Logos/github1600.png' alt="Github"/></li></a>
+          <a href="https://git-scm.com/" target="_blank"><li class="icon list-group-item mt-3 mb-3"><img src='https://msysgit.github.io/img/gwindows_logo.png' alt="Git Bash"/></li></a>
+      </ul>
+    </div>
   </div>
   <!-- End Primary View -->
-
-  <!-- Footer -->
-  <footer class="page-footer">
-    <div class="container">
-    <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
-    <a href="https://github.com/Waysidetester">Github</a>
-    </div>
-  </footer>
-  <!-- End Footer -->
 </body>
 </html>
